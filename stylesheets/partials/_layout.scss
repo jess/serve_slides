@@ -34,8 +34,8 @@ section[role=main] {
 }
 
 body > footer {
-  padding: 0 $body-margin-x 20px;
-  font-size: 90%;
+  padding: 0 $body-margin-x 0px;
+  font-size: 75%;
   color: $quiet-color;
   a { @include basic-link($text-color); }
   p { margin: 1em 0; }

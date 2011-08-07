@@ -27,7 +27,17 @@
   }
 }
 
-
+.slide {
+  .slideContent {
+    .quiet {
+      color: $quiet-color;
+    }
+    h1 {
+      color: $banner-color;
+      font-size: 2.5em;
+    }
+  }
+}
 //
 // Applied to appropriate elements
 //
