@@ -1,0 +1,3 @@
+[submodule "public/slippy"]
+	path = public/slippy
+	url = https://github.com/Seldaek/slippy.git
