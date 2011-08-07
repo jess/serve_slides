@@ -1,0 +1,86 @@
+.slide
+  %h1 Welcome to Slippy
+  %h2 Usage
+  %ul
+    %li Navigation: [Left]/[Right] arrows to move, [Space] or [Double Click] to go to next slide
+    %li Overview: [ESC]/[Del]/[Tab] to view, [Click] to pick one slide
+    %li Jump: Press [0-9] keys followed by [Enter] to go straight to one slide
+.slide
+  %h1 H1's are centered by default
+  .vcenter
+    %h2 The class "vcenter" on anything
+    %ul
+      %li centers it
+      %li vertically
+.slide{"data-layout" => "alt"}
+  %h1 Layouts
+  %h2 This slide uses the "alt" layout
+  %p It inherits the class "nofooter" of the layout, which allows you to style it differently, and it doesn't have the footer div that the default layout has for example
+  %p By default, all slides use the default layout if it's present
+  %p Layouts must have a <content></content> tag that will be replaced by each slide's content
+  %pre{:class => "brush: html"}
+    .slide{"data-layout" => "alt"}
+      Foo
+    .layout{"data-name" => "default"}
+      %h1 Some title
+      %content
+      .footer
+        Footer content
+    .layout.nofooter{"data-name" => "alt"}
+      %content
+.slide
+  %h1 Syntax Highlighting
+  %p Code is just pre tags with class="brush: <language>"
+  %p The eval class combined with the js brush makes that Execute link appear on the right
+  %pre{:class => "brush: js eval"}
+    :preserve
+      
+                      // in eval'd block, slide is the current slide
+                      $(slide).css('background', '#533');
+                      // and node is the code block
+                      $(node).css('opacity', '.1');
+                    %p Nifty feature for JS devs doing presentations
+  %br/
+  %p Also if you use alert() in your code, it's piped into those nicer boxes
+  %pre.brush:.js.eval
+    :preserve
+      
+                      alert('test');
+                    %p This is really great to provide interaction during a presentation
+.slide
+  %h1 Syntax Highlighting
+  %pre.brush:.php
+    :preserve
+      
+                      function foo($var) {
+                          // this is some php code as an example
+                          $foo = new Class("meh");
+                          $foo->bar();
+                      }
+                  .slide
+  %h1 Incremental Slides
+  %p Hit next
+  %p.incremental Every "next slide" action builds up the slide
+  %p.incremental element..
+  %p.incremental by..
+  %p.incremental element.
+  %p.incremental For every element that has the incremental class on the slide.
+  %p.incremental That's it for now, enjoy!
+.layout{"data-name" => "default"}
+  %content
+  .footer
+    %span.left Jordi Boggiano
+    %span.right
+      Slippy on
+      %a{:href => "http://github.com/Seldaek/slippy/"} github
+    %span.left
+      Blog
+      %a{:href => "http://seld.be/"} seld.be
+    %span.right
+      Twitter
+      %a{:href => "http://twitter.com/seldaek"} @seldaek
+    %hr.defloat/
+.layout.nofooter{"data-name" => "alt"}
+  %content
+
+
