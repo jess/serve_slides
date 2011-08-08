@@ -9,7 +9,7 @@ header[role=banner] {
     linear-gradient(rgba(black, 0) 0%, rgba(black, 0) 80%, rgba(black, 0.15) 100%),
     radial-gradient(30% 50px, $banner-color, darken($banner-color, 11) 400px)
   );
-  padding: 20px $body-margin-x;
+  padding: 2px $body-margin-x;
   position: relative;
   
   a { @include basic-link(mix($banner-color, white, 20%), $hover: white, $decoration: "plain"); }
@@ -35,6 +35,7 @@ section[role=main] {
 
 body > footer {
   padding: 0 $body-margin-x 0px;
+  border-top: 1px solid #CCC;
   font-size: 75%;
   color: $quiet-color;
   a { @include basic-link($text-color); }

@@ -4,7 +4,7 @@
   %h2.incremental Generates a rack app
   %h2.incremental Has a built in webserver
   %h2.incremental Serves up views
-  %h2.incremental 
+  %h2.incremental.quiet 
     %em It's the V, in MVC
 
 
@@ -38,9 +38,48 @@
   %h2.incremental Mockups/Views for apps 
   %h2.incremental Static website/section
 
+.slide
+  %h1 How It Works
+  %pre
+    gem install serve
+
+  %pre 
+    serve create my-project
+
+.slide
+  %h1 How It Works
+  %h2 Modify Gemfile & Bundle
+  %pre
+    source :rubygems
+
+    gem 'serve', '1.5.1'
+
+    \ # Use edge instead:
+    \ # gem 'serve', :git => 'git://github.com/jlong/serve.git'
+
+    \ # Use Compass and Sass
+    \ gem 'compass'
+    \ gem 'thin'
+    \ gem 'haml'
+
+    \ # Markdown and Textile
+    \ # gem 'rdiscount' # Markdown
+    \ # gem 'RedCloth'  # Textile
 
 
 .slide
-  %h2 Slide 3
+  %h1 How It Works
+  %h2 Open Browser
+  %pre open http://localhost:4000
+
+
 .slide
-  %h2 Slide 4
+  %h1 How It Works
+  %h2 Create files
+  %h2 Partials
+  %h2 _layout 
+
+.slide
+  %h1 How It Works
+  %h2 Get To Work
+
