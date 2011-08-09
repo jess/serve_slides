@@ -28,6 +28,19 @@
 }
 
 //custom slide content
+.overviewWrapper {
+  @include border-radius(5px);
+  border: 1px solid #ebebeb;
+  overflow: hidden;
+  cursor: pointer;
+}
+.slideDisplay {
+  color: #fff;
+  display: block;
+  background: rgba(white, 0.1);
+  padding: 7px;
+   @include border-bottom-left-radius(10px);
+}
 .slide {
   .slideContent {
     .quiet {
