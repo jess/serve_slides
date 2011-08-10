@@ -120,6 +120,15 @@
     font-size: 95%;
     color: soften($text-color);
   }
+  slidecode {
+    background: soften($text-color);
+    color: invert($text-color);
+    font-family: $font-family;
+    font-size: 95%;
+    line-height: $line-height;
+    padding: 1px 5px;
+    @include border-radius;
+  }
   pre {
     background: soften($text-color);
     color: invert($text-color);

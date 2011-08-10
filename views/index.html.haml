@@ -99,9 +99,15 @@
   %h1 Use
   %h2 Main Directories
   %ul
-    %li public (static assets)
-    %li stylesheets (sass)
-    %li views (all view viles)
+    %li 
+      %slidecode public 
+      (static assets)
+    %li 
+      %slidecode stylesheets 
+      (sass)
+    %li 
+      %slidecode views 
+      (all view files)
 
 .slide
   %h1 Views
@@ -109,30 +115,48 @@
     Place your view files in the views dir.  
   %h2 Routes
   %p 
-    \/about is routed to views/about.html.xxxx
+    %slidecode /about 
+    is routed to 
+    %slidecode views/about.html.xxxx
   %p 
-    Create as many subdirectories as you like
-    %pre views/products/mac/imac.html.erb
+    Create as many subdirectories as you like:
+  %p
+    %slidecode views/products/mac/imac.html.erb
+  %p
+    routes to:
+    %slidecode /products/mac/imac
 
 .slide
   %h1 Partials
   %h2 Same as rails
-  %pre =render "footer"
+  %pre =render "footer" #haml syntax
+  %p Renders partial: 
+  %pre /views/_footer.html.xxxx
 
 .slide
   %h1 Layouts
   %p 
-    Create a **_layout** file in your main views directory.  You can create additional layout files for each directory.  If you don't
+    Create a 
+    %slidecode _layout.html.xxxx 
+    file in your main views directory.  You can create additional layout files for each directory.  If you don't
     have a layout file in a sub directory, serve will keep looking up.
+  %p
+    %em
+      **The main difference from rails is the _ (underscore) in front and it's specified by what directory you're in.
 
 .slide
   %h1 View helpers
   %p Many of the common view helpers are available (link_to, image_tag, etc)
-  %p Crete custom view helpers in the view_helpers.rb file
+  %p 
+    Create custom view helpers in the 
+    %slidecode view_helpers.rb 
+    file
 
 .slide
   .do_work
     Do Work!
+  %p 
+    There's not much else to learn.  Just do what you do with the tools you're used to and good at!
 
 .slide 
   %h2 Get more info
