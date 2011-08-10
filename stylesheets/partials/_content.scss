@@ -42,6 +42,7 @@
    @include border-bottom-left-radius(10px);
 }
 .slide {
+  font-size: 1.3em;
   .slideContent {
     .quiet {
       color: $quiet-color;
@@ -61,4 +62,14 @@
 
 section[role=main] > article {
   @extend .content
+}
+
+.do_work {
+  font-size: 7em;
+  color: #ccc;
+  font-family: Times;
+}
+
+.footer_right {
+  float: right;
 }

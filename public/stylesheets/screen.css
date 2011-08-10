@@ -232,6 +232,9 @@ body {
   border-bottom-left-radius: 10px;
 }
 
+.slide {
+  font-size: 1.3em;
+}
 .slide .slideContent .quiet {
   color: gray;
 }
@@ -243,6 +246,16 @@ body {
   margin: .8em 0;
 }
 
+.do_work {
+  font-size: 7em;
+  color: #ccc;
+  font-family: Times;
+}
+
+.footer_right {
+  float: right;
+}
+
 header[role=banner] {
   background: #973b12;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.15))), -webkit-gradient(radial, 30% 50px, 0, 30% 50px, 400, color-stop(0%, #973b12), color-stop(100%, #65270c));
@@ -251,8 +264,11 @@ header[role=banner] {
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), -o-radial-gradient(30% 50px, #973b12, #65270c 400px);
   background-image: -ms-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), -ms-radial-gradient(30% 50px, #973b12, #65270c 400px);
   background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(30% 50px, #973b12, #65270c 400px);
-  padding: 2px 15%;
+  padding: 4px 15%;
   position: relative;
+}
+header[role=banner] img {
+  height: 65px;
 }
 header[role=banner] a:link {
   color: #ead7cf;
